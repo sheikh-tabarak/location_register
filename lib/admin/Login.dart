@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:login_system/MainPage.dart';
+import 'package:login_system/admin/ForgetPassword.dart';
 import 'package:login_system/admin/Signup.dart';
 import 'package:login_system/configurations/BigText.dart';
 import 'package:login_system/models/Authentication.dart';
@@ -146,11 +147,11 @@ class _LoginState extends State<Login> {
                                         builder: ((context) => MainPage())));
                               } else {
                                 setState(() {
+                                  widget.isLoading = false;
                                   thisiserror = message.toString().replaceRange(
                                       message.toString().indexOf("["),
                                       message.toString().indexOf("]") + 2,
                                       "");
-                                  widget.isLoading = false;
 
                                   print("this is after > $thisiserror");
                                 });
@@ -175,6 +176,27 @@ class _LoginState extends State<Login> {
                               },
                               child: SmallText(
                                 text: "Sign up",
+                                color: Colors.black,
+                              ))
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SmallText(text: "Forget Password ? "),
+                          InkWell(
+                              onTap: () {
+                                Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            ForgetPassword()));
+                              },
+                              child: SmallText(
+                                text: "Reset now",
                                 color: Colors.black,
                               ))
                         ],

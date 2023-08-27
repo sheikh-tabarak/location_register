@@ -68,6 +68,22 @@ logOut() async {
   await FirebaseAuth.instance.signOut();
 }
 
+//  Method to reset profile password
+Future<bool> resetmypassword(String email) async {
+  try {
+    await FirebaseAuth.instance.sendPasswordResetEmail(email: email);
+    return true;
+  } on FirebaseAuthException catch (e) {
+    setError(e.toString());
+
+    return false;
+  } catch (e) {
+    setError(e.toString());
+    String message = clearError(e.toString());
+    return false;
+  }
+}
+
 // Method for Uploading Profile !!!
 
 Future<String> uploadProfilePicture(
