@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "389818492320",
+    "project_id": "loginsystem-a2798",
+    "storage_bucket": "loginsystem-a2798.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389818492320:android:f539658da1ad88edfcb0c5",
+        "android_client_info": {
+          "package_name": "com.example.login_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389818492320-0v8bcf9kiaujc4g4jbfm8cq9fqht4ckd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANyqdwed8ION5dgkzGAcAG6ta_YuH3SjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389818492320-0v8bcf9kiaujc4g4jbfm8cq9fqht4ckd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
