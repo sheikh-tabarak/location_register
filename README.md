@@ -1,26 +1,39 @@
-# Login System
+[![Cover Image](https://github.com/sheikh-tabarak/location_register/blob/main/assets/images/cover-login.png?raw=true)]()
 
-A Client Based Freelance Project.
+## Project Title:
+Location Based Registration system
+ 
+### View Live:
+https://github.com/sheikh-tabarak/location_register/blob/main/assets/images/cover-login.png?raw=true
 
-Run the following to get all dependencies
-```sh
-flutter pub get
-```
+### Project Description:
+Location based Registration system is a highly secure Login system to record the signups of large number of users which involve the login access to  current location of while sign up and allow user to browe all other users profiles inside the app as well.
 
-Highlighted Features:
+### Features:
+- [x] Fetches Current Location
+- [x] Email Verification
+- [x] All Users Data
+- [x] Items CRUD for general purpose
 
-<img style="display:inline" src="https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/animations/e34191c9da956941455263cd0479202771803714de5afa40.gif" height="40">
-<img src="https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/dbc22cda8c5a4366e7c9abdc5bb03315a358e2f61a1611db.png" height="40">
+### Technologies Used:
+- [x] Flutter
+- [x] Dart
+- [x] Firebase
 
-## Getting Started
+### How to Clone and use:
+1. Create a free account at [Firebase Console](https://console.firebase.google.com)
+2. Create a new Database on Firestore.
+3. Clone the repo:
+   ```sh
+   git clone https://github.com/sheikh-tabarak/weatherstats.git
+   ```
+4. Install NPM packages
+   ```sh
+   flutter pub get
+   ```
+5. Create a file ` .env ` in the root of your folder and add your API Key like below:
+   ```js
+   const FIREBASE_API_INSTANCE = <YOUR API KEY HERE>;
+   ```
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![Footer Image](https://raw.githubusercontent.com/sheikh-tabarak/sheikh-tabarak/main/Githubfooter.png)](https://sheikhtabarak.me/)
